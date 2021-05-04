@@ -1,0 +1,32 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 300px;
+    padding: 30px;
+    background-color: blueviolet;
+    color: #fff;
+    position: relative;
+}
+
+.wrapper::before {
+    content: '';
+    display: inline-block;
+    width: 0;
+    height: 0;
+
+    border-bottom: 15px solid blueviolet;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-50%);
+
+}
